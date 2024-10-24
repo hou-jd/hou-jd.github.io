@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Academic Webpage" />
-    <meta name="author" content="senli1073" />
-    <title id="title"></title>
+    <meta name="description" content="Hou Jiadong's Professional Webpage" />
+    <meta name="author" content="Hou Jiadong" />
+    <title>Hou Jiadong's Portfolio</title>
 
     <!-- Icon -->
     <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
@@ -16,13 +16,10 @@
 
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
@@ -31,49 +28,11 @@
     <!-- Bootstrap core JS-->
     <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
 
-    <!-- For Compatability -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
+    <!-- MathJax for mathematics -->
+    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <!-- Mathematics -->
-    <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
-        MathJax = {
-            tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
-            }
-        };
-    </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
     <!-- Core JS-->
     <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
 
 </head>
 
@@ -81,8 +40,7 @@
     <!-- Navigation-->
     <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
+            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top">Hou Jiadong</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 MENU
@@ -90,84 +48,163 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
-                    </li>
-
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#home">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#projects">PROJECTS</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#internships">INTERNSHIPS</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#cv">CV</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Top Section -->
+    <!-- Top Section with Links -->
     <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
         <div class="top-section-content">
             <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
+                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt">Hou Jiadong</h2>
+                <p class="text-white">MSc Robotics
+The University of Manchester/
+Interested in autonomous driving</p>
+                <!-- Adding CV, GitHub, and LinkedIn links in the top section -->
+                <a class="btn btn-primary" href="static/assets/CV-Hou%20Jiadong.pdf" download="CV-Hou_Jiadong.pdf">Download CV (PDF)</a>
+                <a class="btn btn-secondary" href="https://github.com/hou-jd" target="_blank">GitHub Profile</a>
+                <a class="btn btn-info" href="https://linkedin.com/in/佳栋-侯-52455b334" target="_blank">LinkedIn Profile</a>
             </div>
         </div>
     </section>
-    <!-- Top Section -->
 
     <!-- Photo -->
     <div class="container px-5">
         <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.png">
+            <img class="shadow" src="static/assets/img/photo.jpg" alt="Hou Jiadong">
         </div>
     </div>
-    <!-- Photo -->
-    
+
     <!-- Home -->
     <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+       <div class="container px-5">
+           <header>
+               <h2 id="home-subtitle">About Me</h2>
+           </header>
+           <div class="main-body" id="home-md">
+               <p>
+                   Hello! My name is <strong>Hou Jiadong</strong>, and I am currently pursuing a Master's degree in <strong>Robotics</strong> at the <strong>University of Manchester</strong>. My studies focus on subjects like <strong>Robotic Systems Design</strong>, <strong>Machine Learning</strong>, and <strong>Software for Robotics</strong>. I previously earned my Bachelor's degree in <strong>Mechanical Engineering</strong> from <strong>Nanjing Tech University</strong>, where I developed a solid foundation in engineering principles.
+                   <br><br>
+                  I am eager to deepen my knowledge in robotics, with a particular focus on autonomous vehicles. My goal is to apply my expertise to innovative solutions in this field and pursue a career in the development of self-driving technologies.
+               </p>
+           </div>
+       </div>
+    </section>
+
+    <!-- Project and Research Experience -->
+    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="projects">
         <div class="container px-5">
             <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
+                <h2 id="projects-subtitle"><i class="bi bi-briefcase-fill"></i>&nbsp;Project and Research Experience</h2>
             </header>
-            <div class="main-body" id="home-md"></div>
+            <div class="main-body" id="projects-md">
+                <ul>
+                    <li><strong>Design of Two-grade Straight Column Gear Reducer (Team Leader, Feb 2023 - May 2023)</strong>
+                        <p>Organized the team to complete the course design, allocated tasks, and presented the project reports and slides to teachers. Devised the gear plan to select the electromotor and determine the transmission ratio. Conducted simulation analysis to optimize the reducer’s performance.</p>
+                    </li>
+                    <li><strong>Design of Single-cylinder Four-stroke Internal Combustion Engine (Core Member, Sep 2022 - May 2023)</strong>
+                        <p>Developed the project plan outlining timelines for research and mastered the working principles. Conducted simulations and modeling to assess the performance and efficiency of the design, calculating various parameters like acceleration, turning velocity, and force of moment.</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
-    <!-- Home -->
 
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
+    <!-- Internship Experience -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="internships">
         <div class="container px-5">
             <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
+                <h2 id="internships-subtitle"><i class="bi bi-award-fill"></i>&nbsp;Internship Experience</h2>
             </header>
-            <div class="main-body" id="publications-md"></div>
-
+            <div class="main-body" id="internships-md">
+                <ul>
+                    <li><strong>Robotics Engineering Intern at Weichai Power Co., Ltd. - Summer 2022</strong>
+                        <p>Participated in various mechanical design-related assignments, gaining insights into industrial design processes like conceptual design, manufacturing, and testing. Involved in the design of engine frame support rods, including creating drawings, conducting strength and durability analysis.</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
-    <!-- Publications  -->
 
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
+  <!-- Videos Section -->
+<section class="bg-gradient-primary-to-secondary-light mt5 md5" id="videos">
+    <div class="container px-5">
+        <header>
+            <h2 id="videos-subtitle"><i class="bi bi-camera-video-fill"></i>&nbsp;Videos</h2>
+        </header>
+        <div class="main-body" id="videos-md">
+            <!-- 使用 <img> 标签嵌入 GIF 文件 -->
+            <img src="static/assets/videos/video.gif" alt="Robotic Systems for Sustainable Development" width="100%" height="auto">
+            
+            <p>Robotic Systems for Sustainable Development/ Educational video about the contribution of robotic systems to addressing the challenges around sustainability and their ethical perspective.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- CV Section -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="cv">
         <div class="container px-5">
             <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
+                <h2 id="cv-subtitle"><i class="bi bi-file-earmark-person-fill"></i>&nbsp;Curriculum Vitae (CV)</h2>
             </header>
-            <div class="main-body" id="awards-md"></div>
-
+            <div class="main-body" id="cv-md">
+                <p>These are some summaries of CV. You can download the full version of my CV by clicking the link below.</p>
+                <ul>
+                    <li><strong>Education:</strong> Bachelor of Mechanical Engineering, Nanjing Tech University, 2020 - 2024</li>
+                    <li><strong>Skills:</strong> CAD, eDrawings, RobotStudio, SOLIDWORK, TIA Administrator, Python, C</li>
+                </ul>
+                <a class="btn btn-primary" href="static/assets/CV-Hou%20Jiadong.pdf" download="Hou%20Jiadong_CV">Download CV (PDF)</a>
+            </div>
         </div>
     </section>
-    <!-- Awards -->
 
+    <!-- Get In Touch Section -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="contact">
+        <div class="container px-5">
+            <header>
+                <h2 id="contact-title" style="color:blue;">Get In Touch</h2>
+            </header>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Ready to start a conversation? I would love to hear from you. Feel free to reach out for collaboration, inquiries, or just to say hello!</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-phone-fill"></i> (+44) 7880779693</li>
+                        <li><i class="bi bi-envelope-fill"></i> houjiadong1216@126.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer-->
     <footer class="bg-bottom text-center py-5">
         <div class="container px-5">
             <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/senli1073">Github</a>
+                <div id="copyright-text" class="mb-2">Hou Jiadong © 2024</div>
+                <a id="github-link" href="https://github.com/hou-jd" target="_blank">GitHub</a>
                 <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE">License</a>
+                <a id="linkedin-link" href="https://linkedin.com/in/佳栋-侯-52455b334" target="_blank">LinkedIn</a>
+                <span class="mx-1">&middot;</span>
+                <a id="license-link" href="#">License</a>
             </div>
         </div>
     </footer>
@@ -175,3 +212,5 @@
 </body>
 
 </html>
+
+
